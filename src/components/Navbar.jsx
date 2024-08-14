@@ -92,7 +92,7 @@ const Navbar = ({ onCategoryChange, onSearch, onFilterChange }) => {
 Navbar.propTypes = {
     onCategoryChange: PropTypes.func.isRequired,
     onSearch: PropTypes.func.isRequired,
-    onFilterChange: PropTypes.func.isRequired,
+    onFilterChange: PropTypes.func.isRequired
 };
 
 export default Navbar;

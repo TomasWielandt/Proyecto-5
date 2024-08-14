@@ -16,7 +16,7 @@ const Card = ({ image, title, details }) => {
 Card.propTypes = {
     image: PropTypes.func.isRequired,
     title: PropTypes.func.isRequired,
-    details: PropTypes.func.isRequired,
+    details: PropTypes.func.isRequired
 };
 
 export default Card;
