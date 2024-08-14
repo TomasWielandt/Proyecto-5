@@ -26,30 +26,33 @@ const Navbar = ({ onCategoryChange, onSearch, onFilterChange }) => {
       <select 
         onChange={handleCategoryChange} 
         value={selectedCategory} 
-        className="mb-4 p-2"
+        className="mb-4 p-2 text-black"
       >
         <option value="characters">Characters</option>
         <option value="transformations">Transformations</option>
         <option value="planets">Planets</option>
       </select>
+      <div className="flex flex-col mb-4">
+      <label className="mb-2">Name:</label>
       <input
         type="text"
-        placeholder="Search..."
-        className="p-2 mb-4"
+        placeholder="Name..."
+        className="p-2 mb-4 text-black"
         onChange={(e) => onSearch(e.target.value)}
       />
+      </div> 
       {/* Filtros */}
       {selectedCategory === 'characters' && (
         <div className="flex flex-col mb-4">
           <label className="mb-2">Gender:</label>
-          <select name="gender" onChange={handleFilterChange} className="p-2 mb-2">
+          <select name="gender" onChange={handleFilterChange} className="p-2 mb-2 text-black">
             <option value="">All</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
 
           <label className="mb-2">Race:</label>
-          <select name="race" onChange={handleFilterChange} className="p-2 mb-2">
+          <select name="race" onChange={handleFilterChange} className="p-2 mb-2 text-black">
             <option value="">All</option>
             <option value="Saiyan">Saiyan</option>
             <option value="Human">Human</option>
@@ -57,7 +60,7 @@ const Navbar = ({ onCategoryChange, onSearch, onFilterChange }) => {
           </select>
 
           <label className="mb-2">Affiliation:</label>
-          <select name="affiliation" onChange={handleFilterChange} className="p-2">
+          <select name="affiliation" onChange={handleFilterChange} className="p-2 text-black">
             <option value="">All</option>
             <option value="Z Fighters">Z Fighters</option>
             <option value="Ginyu Force">Ginyu Force</option>
