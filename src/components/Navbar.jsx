@@ -82,7 +82,7 @@ const Navbar = ({ onCategoryChange, onSearch, onFilterChange }) => {
 
       {/* No hay filtros para transformations */}
       {selectedCategory === 'transformations' && (
-        <div className="mb-4">No filters available for transformations.</div>
+        <div className="mb-4">No filters available for<br /> transformations.</div>
       )}
     </div>
   );
